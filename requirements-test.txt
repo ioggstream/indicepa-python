@@ -1,0 +1,4 @@
+flask_testing
+nose
+isort
+black

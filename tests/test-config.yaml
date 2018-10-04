@@ -1,0 +1,4 @@
+test:
+  user: "uid=xxx,o=utentildap"
+  password: "yyyyyy"
+  host: "www.indicepa.it"

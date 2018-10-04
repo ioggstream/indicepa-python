@@ -1,0 +1,2510 @@
+# extended LDIF
+#
+# LDAPv3
+# base <o=c_e472,c=it> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# c_e472, it
+dn: o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: amministrazione
+o: c_e472
+tipoAmm: L6
+description: Comune di Latina
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Damiano
+cognomeResp: Coletta
+titoloResp: Sindaco
+sitoIstituzionale: www.comune.latina.it
+st: ACCREDITATA
+dataVerifica: 2018-09-18
+codiceFiscaleAmm: 00097020598
+codiceAmm: 125155432201
+street: Piazza del Popolo, 1
+macroTipoAmm: PA
+mail: protocollo@pec.comune.latina.it
+contatti: segreteria.generale@pec.comune.latina.it#pec
+contatti: servizio.attivitaproduttive@pec.comune.latina.it#pec
+contatti: urp@pec.comune.latina.it#pec
+contatti: scuolaculturasport@pec.comune.latina.it#pec
+nomeS: 1#Albo Pretorio
+nomeS: 2#Gare e Appalti
+nomeS: 3#Moduli on-line
+nomeS: 4#Trasparenza Amministrativa
+nomeS: 5#Ufficio TIA
+nomeS: 6#Residenze in tempo reale
+nomeS: 7#Ufficio di Stato Civile
+descrizioneS: 1#Albo Pretorio
+descrizioneS: 2#Gare e Appalti on line
+descrizioneS: 3#Moduli on-line
+descrizioneS: 4#Trasparenza Amministrativa
+descrizioneS: 5#Ufficio TIA
+descrizioneS: 6#Residenze in tempo reale
+descrizioneS: 7#Ufficio di Stato Civile
+fruibS: 1#true
+fruibS: 2#true
+fruibS: 3#true
+fruibS: 4#true
+fruibS: 5#true
+fruibS: 6#true
+fruibS: 7#true
+mailS: 1#accessocivico@pec.comune.latina.it
+mailS: 2#servizio.gare@pec.comune.latina.it
+mailS: 3#urp@pec.comune.latina.it
+mailS: 4#accessocivico@pec.comune.latina.it
+mailS: 5#ufficio.tia@pec.comune.latina.it
+mailS: 6#iscrizionianagrafiche@comune.latina.it
+mailS: 7#statocivile@pec.comune.latina.it
+servizioTelematico: 1#http://trasparenza.comune.latina.it/web/trasparenza/albo
+ -pretorio
+servizioTelematico: 2#http://www.comune.latina.it/c-638/gare-e-appalti-on-line
+servizioTelematico: 3#http://www.comune.latina.it/c-496/moduli-on-line
+servizioTelematico: 4#http://trasparenza.comune.latina.it
+servizioTelematico: 5#http://www.comune.latina.it/c-380/gestione-tia
+servizioTelematico: 6#http://www.comune.latina.it/a-8494/abitare/residenze-in-
+ tempo-reale
+servizioTelematico: 7#http://www.comune.latina.it/c-138/stato-civile
+mailSPub: 1#s
+mailSPub: 2#s
+mailSPub: 3#s
+mailSPub: 4#s
+mailSPub: 5#s
+mailSPub: 6#s
+mailSPub: 7#s
+telephonenumberS: 7#0773652511
+
+# aoo2000, c_e472, it
+dn: aoo=aoo2000,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoo2000
+description: DIREZIONE GENERALE
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Maurizio
+cognomeResp: Bruschi
+street: Piazza del Popolo, 1
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-06-07
+mailResp: maurizio.bruschi@comune.latina.it
+mail: direzione.generale@pec.comune.latina.it
+
+# aoo3000, c_e472, it
+dn: aoo=aoo3000,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoo3000
+description: AREA AFFARI GENERALI E PERSONALE
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Lorenzo
+cognomeResp: Le Donne
+street: Piazza del Popolo, 1
+dataIstituzione: 2011-03-25
+dataSoppressione: 2012-06-29
+mailResp: ledonne.lorenzo@pec.comune.latina.it
+mail: servizio.affarigenerali@pec.comune.latina.it
+nomeS: 1#SERVIZIO AFFARI GENERALI
+nomeS: 2#SERVIZIO GARE E APPALTI
+nomeS: 3#SERVIZIO  RISORSE UMANE
+descrizioneS: 1#SERVIZIO AFFARI GENERALI
+descrizioneS: 2#SERVIZIO GARE E APPALTI
+descrizioneS: 3#SERVIZIO  RISORSE UMANE
+fruibS: 1#false
+fruibS: 2#false
+fruibS: 3#false
+mailS: 1#servizio.affarigenerali@pec.comune.latina.it
+mailS: 3#servizio.affaripersonale@pec.comune.latina.it
+mailSPub: 1#s
+mailSPub: 2#n
+mailSPub: 3#s
+
+# aoo4000, c_e472, it
+dn: aoo=aoo4000,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoo4000
+description: AREA ECONOMICO FINANZIARIA
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giancarlo
+cognomeResp: Paniccia
+street: Via Duca del Mare - Palazzo Pegasol
+dataIstituzione: 2011-03-25
+dataSoppressione: 2012-06-29
+mailResp: paniccia.giancarlo@pec.comune.latina.it
+mail: servizio.ragioneria@pec.comune.latina.it
+nomeS: 1#SERVIZIO PROGRAMMAZIONE E BILANCIO
+nomeS: 2#SERVIZIO TRIBUTI
+nomeS: 3#SERVIZIO PATRIMONIO E DEMANIO
+descrizioneS: 1#SERVIZIO PROGRAMMAZIONE E BILANCIO
+descrizioneS: 2#SERVIZIO TRIBUTI
+descrizioneS: 3#SERVIZIO PATRIMONIO E DEMANIO
+fruibS: 1#false
+fruibS: 2#false
+fruibS: 3#false
+mailSPub: 1#n
+mailSPub: 2#s
+mailSPub: 3#s
+mailS: 2#servizio.tributi@pec.comune.latina.it
+mailS: 3#servizio.patrimonio@pec.comune.latina.it
+
+# aoo5000, c_e472, it
+dn: aoo=aoo5000,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoo5000
+description: AREA AMBIENTE E TERRITORIO
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giovanni
+cognomeResp: Tasciotti
+street: Piazza del Popolo, 1
+dataIstituzione: 2011-03-25
+dataSoppressione: 2012-06-29
+mailResp: tasciotti.giovanni@pec.comune.latina.it
+mail: servizio.ediliziapubblica@pec.comune.latina.it
+nomeS: 1#SERVIZIO URBANISTICA
+nomeS: 2#SERVIZIO EDILIZIA PUBBLICA E PRIVATA
+nomeS: 3#SERVIZIO AMBIENTE
+descrizioneS: 1#SERVIZIO URBANISTICA
+descrizioneS: 2#SERVIZIO EDILIZIA PUBBLICA E PRIVATA
+descrizioneS: 3#SERVIZIO AMBIENTE
+fruibS: 1#false
+fruibS: 2#false
+fruibS: 3#false
+mailS: 1#servizio.ediliziaprivata@pec.comune.latina.it
+mailS: 2#servizio.ediliziapubblica@pec.comune.latina.it
+mailS: 3#servizio.ambiente@pec.comune.latina.it
+mailSPub: 1#s
+mailSPub: 2#s
+mailSPub: 3#s
+
+# aoo6000, c_e472, it
+dn: aoo=aoo6000,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoo6000
+description: AREA OPERE PUBBLICHE
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Defend
+cognomeResp: Gianfranco
+street: Piazza del Popolo,1
+dataIstituzione: 2011-03-25
+dataSoppressione: 2012-06-29
+mailResp: defend.gianfranco@pec.comune.latina.it
+mail: servizio.oopp@pec.comune.latina.it
+nomeS: 1#SERVIZIO LAVORI PUBBLICI
+nomeS: 2#SERVIZIO MOBILITA'
+nomeS: 3#SERVIZIO MANUTENZIONI
+nomeS: 4#Trasporti
+descrizioneS: 1#SERVIZIO LAVORI PUBBLICI
+descrizioneS: 2#SERVIZIO MOBILITA'
+descrizioneS: 3#SERVIZIO MANUTENZIONI
+descrizioneS: 4#Trasporti
+fruibS: 1#false
+fruibS: 2#false
+fruibS: 3#false
+fruibS: 4#false
+mailS: 1#servizio.oopp@pec.comune.latina.it
+mailS: 2#servizio.mobilita@pec.comune.latina.it
+mailS: 3#servizio.manutenzioni@pec.comune.latina.it
+mailS: 4#servizio.trasporti@pec.comune.latina.it
+mailSPub: 1#s
+mailSPub: 2#s
+mailSPub: 3#s
+mailSPub: 4#s
+
+# aoo7000, c_e472, it
+dn: aoo=aoo7000,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoo7000
+description: AREA WELFARE
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Alessandra
+cognomeResp: Caputi
+street: Piazza del Popolo, 1
+dataIstituzione: 2011-03-25
+dataSoppressione: 2012-06-29
+mailResp: caputi.alessandra@pec.comune.latina.it
+mail: servizio.demografico@pec.comune.latina.it
+contatti: anagrafe@pec.comune.latina.it#pec
+contatti: elettorale@pec.comune.latina.it#pec
+nomeS: 1#SERVIZIO DEMOGRAFICO E DECENTRAMENTO
+nomeS: 2#SERVIZIO POLITICHE SOCIALI
+nomeS: 3#SERVIZIO SEGRETARIATO SOCIALE
+nomeS: 4#Censimento
+nomeS: 5#AIRE
+descrizioneS: 1#CIRCONDARIALE
+descrizioneS: 2#SERVIZIO POLITICHE SOCIALI
+descrizioneS: 3#SERVIZIO SEGRETARIATO SOCIALE
+descrizioneS: 4#Censiomento 2011
+descrizioneS: 5#AIRE
+fruibS: 1#false
+fruibS: 2#false
+fruibS: 3#false
+fruibS: 4#false
+fruibS: 5#false
+mailS: 1#circondariale@pec.comune.latina.it
+mailS: 2#servizio.pubblicaistruzione@pec.comune.latina.it
+mailS: 3#servizi.sociali@pec.comune.latina.it
+mailS: 4#censimento2011@pec.comune.latina.it
+mailS: 5#aire@pec.comune.latina.it
+mailSPub: 1#s
+mailSPub: 2#s
+mailSPub: 3#s
+mailSPub: 4#s
+mailSPub: 5#s
+
+# aoo8000, c_e472, it
+dn: aoo=aoo8000,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoo8000
+description: AREA SVILUPPO ECONOMICO CULTURALE
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giuseppe
+cognomeResp: Canoro
+dataIstituzione: 2011-03-25
+dataSoppressione: 2012-06-29
+mailResp: canoro.giuseppe@pec.comune.latina.it
+mail: servizio.teatro@pec.comune.latina.it
+contatti: servizio.sistemabibliotecario@pec.comune.latina.it#pec
+nomeS: 1#SERVIZIO ATTIVITA' CULTURALI
+nomeS: 2#SERVIZIO POLITICHE GIOVANILI
+nomeS: 3#SERVIZIO SVILUPPO ECONOMICO
+nomeS: 4#Turismo
+nomeS: 5#SUAP
+descrizioneS: 1#SERVIZIO ATTIVITA' CULTURALI
+descrizioneS: 2#SERVIZIO POLITICHE GIOVANILI
+descrizioneS: 3#SERVIZIO SVILUPPO ECONOMICO
+descrizioneS: 4#Turismo
+descrizioneS: 5#SUAP
+fruibS: 1#false
+fruibS: 2#false
+fruibS: 3#false
+fruibS: 4#false
+fruibS: 5#false
+mailS: 1#servizio.sistemabibliotecario@pec.comune.latina.it
+mailS: 3#servizio.attivitaproduttive@pec.comune.latina.it
+mailS: 4#servizio.turismo@pec.comune.latina.it
+mailS: 5#servizio.suap@pec.comune.latina.it
+mailSPub: 1#s
+mailSPub: 2#n
+mailSPub: 3#s
+mailSPub: 4#s
+mailSPub: 5#s
+
+# aooAffariGeneral, c_e472, it
+dn: aoo=aooAffariGeneral,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooAffariGeneral
+description: Servizio Affari Generali
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Paola
+cognomeResp: Bragaloni
+street: Via Bonn, 1
+dataIstituzione: 2014-03-24
+dataSoppressione: 2014-09-11
+telephoneNumber: 07731757362
+mailResp: paola.bragaloni@comune.latina.it
+mail: servizio.economato@pec.comune.latina.it
+
+# aooambiente, c_e472, it
+dn: aoo=aooambiente,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooambiente
+description: Servizio Ambiente
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Grazia
+cognomeResp: De Simone
+street: Via Cervone 2
+dataIstituzione: 2013-11-28
+dataSoppressione: 2014-09-11
+telephoneNumber: 07731533101
+mailResp: grazia.desimone@comune.latina.it
+telephonenumberResp: 07731533101
+facsimileTelephoneNumber: 0773414077
+mail: servizio.ambiente@pec.comune.latina.it
+
+# aooavvocatura, c_e472, it
+dn: aoo=aooavvocatura,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooavvocatura
+description: Staff Avvocatura
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Francesco
+cognomeResp: Di Leginio
+street: Via Duca Del Mare - Palazzo Pegasol
+dataIstituzione: 2009-08-03
+dataSoppressione: 2018-09-04
+mailResp: avvocatura@comune.latina.it
+mail: servizio.avvocatura@pec.comune.latina.it
+
+# aoobilancio, c_e472, it
+dn: aoo=aoobilancio,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoobilancio
+description: Servizio Programmazione e Bilancio
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Quirino
+cognomeResp: Volpe
+street: Via Duca del Mare, 19
+dataIstituzione: 2014-09-10
+dataSoppressione: 2014-09-11
+telephoneNumber: 0773652402
+mailResp: quirino.volpe@comune.latina.it
+facsimileTelephoneNumber: 0773697524
+mail: servizio.ragioneria@pec.comune.latina.it
+
+# aooconsiglio, c_e472, it
+dn: aoo=aooconsiglio,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooconsiglio
+description: Staff Ufficio del Consiglio
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Daniela
+cognomeResp: Ventriglia
+street: Piazza del Popolo, 1
+dataIstituzione: 2014-09-09
+dataSoppressione: 2018-09-04
+telephoneNumber: 0773652207
+mailResp: daniela.ventriglia@comune.latina.it
+telephonenumberResp: 0773652676
+facsimileTelephoneNumber: 0773652328
+mail: servizio.affariistituzionali@pec.comune.latina.it
+
+# aooDemografico, c_e472, it
+dn: aoo=aooDemografico,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooDemografico
+description: Servizio Demografico e Decentramento
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Antonella
+cognomeResp: Galardo
+street: Via Ezio, 36
+dataIstituzione: 2014-09-09
+dataSoppressione: 2014-09-11
+telephoneNumber: 0773652645
+mailResp: antonella.galardo@comune.latina.it
+mail: servizio.demografico@pec.comune.latina.it
+
+# aoodirgen, c_e472, it
+dn: aoo=aoodirgen,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoodirgen
+description: Direzione Generale
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Maurizio
+cognomeResp: Bruschi
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+telephoneNumber: 0773652444
+mailResp: maurizio.bruschi@comune.latina.it
+mail: direzione.generale@pec.comune.latina.it
+
+# aoopolizialoc, c_e472, it
+dn: aoo=aoopolizialoc,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoopolizialoc
+description: Staff Polizia Locale
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Francesco
+cognomeResp: Passaretti
+street: Piazza Dei Mercanti
+dataIstituzione: 2009-08-03
+dataSoppressione: 2018-09-04
+telephoneNumber: 077346661
+mailResp: passaretti.francesco@pec.comune.latina.it
+mail: servizio.polizialocale@pec.comune.latina.it
+
+# aoorisorseumane, c_e472, it
+dn: aoo=aoorisorseumane,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aoorisorseumane
+description: Servizio Risorse Umane
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Immacolata
+cognomeResp: Pizzella
+street: Piazza del Popolo, 14
+dataIstituzione: 2014-09-09
+dataSoppressione: 2014-09-11
+telephoneNumber: 0773652480
+mailResp: imma.pizzella@comune.latina.it
+mail: servizio.affaripersonale@pec.comune.latina.it
+
+# aooseggen, c_e472, it
+dn: aoo=aooseggen,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooseggen
+description: SEGRETERIA GENERALE
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Pasquale
+cognomeResp: Russo
+street: Piazza del Popolo, 1
+dataIstituzione: 2009-08-03
+dataSoppressione: 2012-06-29
+mailResp: segretariogenerale@comune.latina.it
+mail: segreteria.generale@pec.comune.latina.it
+contatti: servizio.contratti@pec.comune.latina.it#pec
+
+# aooSegretSociale, c_e472, it
+dn: aoo=aooSegretSociale,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooSegretSociale
+description: Servizio Segreteriato Sociale
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Immacolata
+cognomeResp: Pizzella
+street: Via Duca del Mare, 7
+dataIstituzione: 2014-09-10
+dataSoppressione: 2014-09-11
+telephoneNumber: 0773652500
+mailResp: imma.pizzella@comune.latina.it
+facsimileTelephoneNumber: 0773663464
+mail: servizi.sociali@pec.comune.latina.it
+
+# aooser1.1, c_e472, it
+dn: aoo=aooser1.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser1.1
+description: Servizio Comunicazione Istituzionale e Grandi Eventi
+nomeResp: Alfio
+cognomeResp: Gentili
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: comunicazione.grandieventi@pec.comune.latina.it
+
+# aooser10.1, c_e472, it
+dn: aoo=aooser10.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser10.1
+description: POLIZIA LOCALE
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Lidano
+cognomeResp: Marchionne
+street: Piazzale
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+telephoneNumber: 077346661
+mailResp: marchionne.lidano@pec.comune.latina.it
+mail: servizio.polizialocale@pec.comune.latina.it
+
+# aooser11.1, c_e472, it
+dn: aoo=aooser11.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser11.1
+description: Servizio GIS Gestione Piani Aggiornamento Vincoli e Controlli
+nomeResp: Ventura
+cognomeResp: Monti
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: pianificazione@comune.latina.it
+
+# aooser11.2, c_e472, it
+dn: aoo=aooser11.2,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser11.2
+description: Servizio Edilizia Pubblica
+nomeResp: Alessandra
+cognomeResp: Caputi
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.ediliziapubblica@pec.comune.latina.it
+
+# aooser11.3, c_e472, it
+dn: aoo=aooser11.3,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser11.3
+description: Servizio Edilizia Privata
+nomeResp: Ventura
+cognomeResp: Monti
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.ediliziaprivata@comune.latina.it
+
+# aooser11.4, c_e472, it
+dn: aoo=aooser11.4,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser11.4
+description: Servizio Espropri
+nomeResp: Alessandra
+cognomeResp: Pacifico
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.espropri@pec.comune.latina.it
+
+# aooser11.5, c_e472, it
+dn: aoo=aooser11.5,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser11.5
+description: Servizio Ambiente
+nomeResp: Grazia
+cognomeResp: De Simone
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-05-25
+mail: servizio.ambiente@pec.comune.latina.it
+
+# aooser11.6, c_e472, it
+dn: aoo=aooser11.6,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser11.6
+description: Servizio Sportello Unico Attivita Produttive
+nomeResp: Stefano
+cognomeResp: Gargano
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.suap@pec.comune.latina.it
+
+# aooser12.1, c_e472, it
+dn: aoo=aooser12.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser12.1
+description: Servizio GIS OOPP e Protezione Civile
+nomeResp: Gianfranco
+cognomeResp: Defend
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.oopp@pec.comune.latina.it
+
+# aooser12.2, c_e472, it
+dn: aoo=aooser12.2,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser12.2
+description: Servizio Manutenzioni
+nomeResp: Mario
+cognomeResp: Viglialoro
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.manutenzioni@pec.comune.latina.it
+
+# aooser12.3, c_e472, it
+dn: aoo=aooser12.3,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser12.3
+description: Servizio Arredo, Decoro Urbano e Verde Pubblico
+nomeResp: Alfio
+cognomeResp: Gentili
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: verdepubblico@pec.comune.latina.it
+
+# aooser13.1, c_e472, it
+dn: aoo=aooser13.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser13.1
+description: Servizio Avvocatura
+nomeResp: Francesco
+cognomeResp: Di Leginio
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.avvocatura@pec.comune.latina.it
+
+# aooser2.1, c_e472, it
+dn: aoo=aooser2.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser2.1
+description: Servizio Affari Generali
+postalCode: 04100
+provincia: LT
+regione: Lazio
+nomeResp: Paola
+cognomeResp: Bragoloni
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mailResp: paola.bragaloni@comune.latina.it
+mail: servizio.affarigenerali@pec.comune.latina.it
+
+# aooser2.2, c_e472, it
+dn: aoo=aooser2.2,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser2.2
+description: Servizio Gare Appalti Contratti e Rogiti
+nomeResp: Rosalba
+cognomeResp: Tonnina
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.contratti@pec.comune.latina.it
+
+# aooser3.2, c_e472, it
+dn: aoo=aooser3.2,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser3.2
+description: Servizi Demografici Statistici Speciali
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giovanni
+cognomeResp: Della Penna
+street: Piazza del Popolo, 1
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mailResp: dellapenna.giovanni@pec.comune.latina.it
+mail: servizio.demografico@pec.comune.latina.it
+
+# aooser4.1, c_e472, it
+dn: aoo=aooser4.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser4.1
+description: Rapporti con le Istituzioni
+nomeResp: Giovanni
+cognomeResp: Della Penna
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: rapporti.istituzioni@pec.comune.latina.it
+
+# aooser4.2, c_e472, it
+dn: aoo=aooser4.2,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser4.2
+description: Servizio Tributi
+nomeResp: Quirino
+cognomeResp: Volpe
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.tributi@pec.comune.latina.it
+
+# aooser4.3, c_e472, it
+dn: aoo=aooser4.3,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser4.3
+description: Servizio Patrimonio e Demanio
+nomeResp: Alfio
+cognomeResp: Gentili
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.patrimonio@pec.comune.latina.it
+
+# aooser5.2, c_e472, it
+dn: aoo=aooser5.2,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser5.2
+description: Servizio Bilancio, Programmazione economico/finanziaria, Controll
+ o gestione Mutui, Contabilita
+nomeResp: Quirino
+cognomeResp: Volpe
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.ragioneria@pec.comune.latina.it
+
+# aooser5.3, c_e472, it
+dn: aoo=aooser5.3,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser5.3
+description: Servizio Provveditorato Economato e Cassa
+nomeResp: Giancarlo
+cognomeResp: Paniccia
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.economato@pec.comune.latina.it
+
+# aooser6.1, c_e472, it
+dn: aoo=aooser6.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser6.1
+description: Servizio Affari del Personale
+nomeResp: Emanuela
+cognomeResp: Pacifico
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.affaripersonale@pec.comune.latina.it
+
+# aooser8.2, c_e472, it
+dn: aoo=aooser8.2,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser8.2
+description: Servizio Segretariato Sociale
+nomeResp: Alessandra
+cognomeResp: Caputi
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizi.sociali@pec.comune.latina.it
+
+# aooser8.3, c_e472, it
+dn: aoo=aooser8.3,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser8.3
+description: Servizio Farmacia Comunale
+nomeResp: Antonella
+cognomeResp: Galardo
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: farmacia@pec.comune.latina.it
+
+# aooser8.4, c_e472, it
+dn: aoo=aooser8.4,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser8.4
+description: Servizi Educativi, Culturali, Sport, e Tempo libero
+nomeResp: Paola
+cognomeResp: Bragaloni
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.pubblicaistruzione@pec.comune.latina.it
+
+# aooser8.5, c_e472, it
+dn: aoo=aooser8.5,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser8.5
+description: Servizio Istituzioni Teatri, Musei e Pinacoteche
+nomeResp: Giuseppe
+cognomeResp: Canoro
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: museipinacoteche@pec.comune.latina.it
+
+# aooser8.6, c_e472, it
+dn: aoo=aooser8.6,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser8.6
+description: Servizio Sistemi Bibliotecari
+nomeResp: Paola
+cognomeResp: Bragaloni
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.sistemabibliotecario@pec.comune.latina.it
+
+# aooser9.1, c_e472, it
+dn: aoo=aooser9.1,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser9.1
+description: Servizio GIS AAPP Bacini Utenze Flussi
+nomeResp: Giovanni
+cognomeResp: Tasciotti
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.turismo@pec.comune.latina.it
+
+# aooser9.2, c_e472, it
+dn: aoo=aooser9.2,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser9.2
+description: Servizio Attivita Produttive
+nomeResp: Elena
+cognomeResp: Lusena
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.attivitaproduttive@pec.comune.latina.it
+
+# aooser9.3, c_e472, it
+dn: aoo=aooser9.3,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aooser9.3
+description: Servizio Trasporto Pubblico e Mobilita
+nomeResp: Mario
+cognomeResp: Taglialatela
+dataIstituzione: 2009-08-03
+dataSoppressione: 2011-03-25
+mail: servizio.trasporti@pec.comune.latina.it
+
+# aootributi, c_e472, it
+dn: aoo=aootributi,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: aootributi
+description: Servizio Tributi
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Quirino
+cognomeResp: Volpe
+street: Via Duca del Mare, 19
+dataIstituzione: 2014-09-10
+dataSoppressione: 2014-09-11
+mailResp: quirino.volpe@comune.latina.it
+mail: servizio.tributi@pec.comune.latina.it
+
+# Area01, c_e472, it
+dn: aoo=Area01,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: Area01
+description: AREA AMMINISTRATIVA ED ECONOMICO FINANZIARIA
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: GIANFRANCO
+cognomeResp: DEFEND
+street: Piazza del Popolo
+dataIstituzione: 2012-06-29
+dataSoppressione: 2014-09-10
+mailResp: GIANFRANCO.DEFEND@comune.latina.it
+mail: SERVIZIO.RAGIONERIA@pec.comune.latina.it
+
+# Area01Bis, c_e472, it
+dn: aoo=Area01Bis,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: Area01Bis
+description: Area Amministrativa ed Economico Finanziaria
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giuseppe
+cognomeResp: Manzi
+street: Via Duca del Mare
+dataIstituzione: 2014-09-11
+dataSoppressione: 2018-09-04
+mailResp: manzi.giuseppe@pec.comune.latina.it
+mail: servizio.ragioneria@pec.comune.latina.it
+contatti: servizio.tributi@pec.comune.latina.it#pec
+
+# Area02, c_e472, it
+dn: aoo=Area02,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: Area02
+description: AREA WELFARE
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Alessandra
+cognomeResp: Caputi
+dataIstituzione: 2012-06-29
+dataSoppressione: 2014-09-09
+mail: caputi.alessandra@pec.comune.latina.it
+
+# Area02Bis, c_e472, it
+dn: aoo=Area02Bis,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: Area02Bis
+description: Area Welfare
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Grazia
+cognomeResp: De Simone
+street: Via Duca del Mare
+dataIstituzione: 2014-09-11
+dataSoppressione: 2018-09-04
+mailResp: grazia.desimone@comune.latina.it
+mail: servizio.pubblicaistruzione@pec.comune.latina.it
+
+# Area03, c_e472, it
+dn: aoo=Area03,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: Area03
+description: Are Ambiente e Territorio
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Sergio
+cognomeResp: Cappucci
+street: Via Cervone, 2
+dataIstituzione: 2012-06-29
+dataSoppressione: 2018-09-04
+telephoneNumber: 07731939205
+mailResp: cappucci.sergio@pec.comune.latina.it
+telephonenumberResp: 07731939205
+mail: servizio.ambiente@pec.comune.latina.it
+
+# Area04, c_e472, it
+dn: aoo=Area04,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: Area04
+description: Servizio Lavori Pubblici
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Annunziata
+cognomeResp: Lanzillotta
+street: Piazza del Popolo, 1
+dataIstituzione: 2012-06-29
+dataSoppressione: 2018-09-04
+telephoneNumber: 0773652219
+mailResp: lanzillotta.annunziata@pec.comune.latina.it
+telephonenumberResp: 0773652219
+mail: llpp.manutenzioni@pec.comune.latina.it
+
+# DirezGenerale, c_e472, it
+dn: aoo=DirezGenerale,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: DirezGenerale
+description: Direzione Generale
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Ventura
+cognomeResp: Monti
+street: Piazza del Popolo
+dataIstituzione: 2014-09-12
+dataSoppressione: 2014-11-27
+mailResp: ventura.monti@comune.latina.it
+mail: direzione.generale@pec.comune.latina.it
+
+# e472-PG, c_e472, it
+dn: aoo=e472-PG,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: e472-PG
+description: Comune di Latina
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Daniela
+cognomeResp: Ventriglia
+street: Piazza del Popolo, 1
+dataIstituzione: 2018-08-28
+telephoneNumber: 07736521
+mailResp: protocollo@pec.comune.latina.it
+telephonenumberResp: 0773652676
+mail: protocollo@pec.comune.latina.it
+
+# Grandi-Opere, c_e472, it
+dn: aoo=Grandi-Opere,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: Grandi-Opere
+description: Servizio Grandi Opere e Finanza di Progetto
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: LORENZO
+cognomeResp: LE DONNE
+street: Piazza del Popolo, 1
+dataIstituzione: 2011-05-27
+dataSoppressione: 2014-09-12
+mailResp: ledonne.lorenzo@pec.comune.latina.it
+mail: grandiopere@pec.comune.latina.it
+
+# S1300, c_e472, it
+dn: aoo=S1300,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: S1300
+description: Segreteria Generale
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Rosa
+cognomeResp: Iovinella
+street: Via Duca del Mare
+dataIstituzione: 2012-05-22
+dataSoppressione: 2018-09-04
+telephoneNumber: 0773652343
+mailResp: segreteria.generale@pec.comune.latina.it
+telephonenumberResp: 0773652243
+facsimileTelephoneNumber: 0773652566
+mail: segreteria.generale@pec.comune.latina.it
+contatti: segreteria.sindaco@pec.comune.latina.it#pec
+
+# S1300A, c_e472, it
+dn: aoo=S1300A,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: S1300A
+description: Servizio Gare e Contratti
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: EMANUELA
+cognomeResp: PACIFICO
+street: Piazza del Popolo, 1
+dataIstituzione: 2011-05-20
+dataSoppressione: 2014-09-12
+telephoneNumber: 0773652676
+mailResp: emanuela.pacifico@comune.latina.it
+telephonenumberResp: 0773652621
+mail: servizio.gare@pec.comune.latina.it
+nomeS: 1#Gare e Appalti online
+descrizioneS: 1#Gare e Appalti online
+fruibS: 1#true
+mailS: 1#servizio.gare@comune.latina.it
+telephonenumberS: 1#0773652209
+servizioTelematico: 1#http://www.comune.latina.it/c-638/gare-e-appalti-on-line
+mailSPub: 1#s
+
+# Staff-Sindaco, c_e472, it
+dn: aoo=Staff-Sindaco,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: Staff-Sindaco
+description: Staff del Sindaco
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Gianfranco
+cognomeResp: Melaragni
+street: Piazza del Popolo, 1
+dataIstituzione: 2011-05-27
+dataSoppressione: 2016-04-15
+mailResp: segreteria.sindaco@comune.latina.it
+mail: segreteria.sindaco@pec.comune.latina.it
+contatti: ced@pec.comune.latina.it#pec
+contatti: rapporti.istituzioni@pec.comune.latina.it#pec
+
+# SUAP, c_e472, it
+dn: aoo=SUAP,o=c_e472,c=it
+objectClass: top
+objectClass: aoo
+aoo: SUAP
+description: Servizio Attivita' Produttive e Suap
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Grazia
+cognomeResp: De Simone
+street: Via Bonn (Trav. Via Varsavia)
+dataIstituzione: 2018-01-01
+dataSoppressione: 2018-09-04
+telephoneNumber: 07731757321
+mailResp: grazia.desimone@comune.latina.it
+telephonenumberResp: 07731757342
+mail: servizio.attivitaproduttive@pec.comune.latina.it
+
+# AvvStudioA, c_e472, it
+dn: ou=AvvStudioA,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Avvocatura Studio A
+ou: AvvStudioA
+o: c_e472
+street: Via Duca del Mare
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Francesco
+cognomeResp: Di Leginio
+mailResp: avvocatura@comune.latina.it
+CodiceUnivocoUO: KF05EG
+mail: servizio.avvocatura@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: KF05EG
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652358
+MailRespSFE: avvocatura@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# SegrSindaco, c_e472, it
+dn: ou=SegrSindaco,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Gabinetto del Sindaco
+ou: SegrSindaco
+o: c_e472
+street: Piazza del Popolo, 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Gianfranco
+cognomeResp: Melaragni
+mailResp: segreteria.sindaco@comune.latina.it
+CodiceUnivocoUO: 0DLL97
+mail: segreteria.sindaco@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 0DLL97
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652780
+MailRespSFE: segreteria.sindaco@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-04-03
+dataAvvioSFE: 2015-03-31
+
+# Ced-SviluppoInformatico, SegrSindaco, c_e472, it
+dn: ou=Ced-SviluppoInformatico,ou=SegrSindaco,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ced - Sviluppo Informatico
+ou: Ced-SviluppoInformatico
+o: c_e472
+street: Piazza del Popolo 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Luciano
+cognomeResp: Cisi
+telephonenumberResp: 0773652377
+telephoneNumber: 0773652377
+mailResp: luciano.cisi@comune.latina.it
+CodiceUnivocoUO: 2MPZQ8
+mail: ced@pec.comune.latina.it
+contatti: applicazioni.software@pec.comune.latina.it#pec
+dataVerifica: 2015-03-31
+codiceUO: 2MPZQ8
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652377
+MailRespSFE: luciano.cisi@omune.latina.it
+intermediarioSFE: si
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2016-01-14
+dataAvvioSFE: 2015-03-31
+
+# ser7200, c_e472, it
+dn: ou=ser7200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Politiche Sociali
+ou: ser7200
+o: c_e472
+street: Viale Umberto I
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Pacifico
+cognomeResp: Emanuela
+mailResp: emanuela.pacifico@comune.latina.it
+CodiceUnivocoUO: JPSDCO
+mail: asilinido@pec.comune.latina.it
+contatti: farmacia@pec.comune.latina.it#pec
+dataVerifica: 2015-03-31
+codiceUO: JPSDCO
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652621
+MailRespSFE: emanuela.pacifico@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# DirittoStudio, ser7200, c_e472, it
+dn: ou=DirittoStudio,ou=ser7200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Diritto allo Studio
+ou: DirittoStudio
+o: c_e472
+street: Via Umberto I - Teatro Comunale
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Elena
+cognomeResp: Lusena
+CodiceUnivocoUO: RUTM2K
+mail: servizio.pubblicaistruzione@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: RUTM2K
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652552
+MailRespSFE: lusena.elena@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-04-03
+dataAvvioSFE: 2015-03-31
+
+# SegreteriaGen, c_e472, it
+dn: ou=SegreteriaGen,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Segreteria Generale
+ou: SegreteriaGen
+o: c_e472
+street: Piazza del Popolo, 4
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Pasquale
+cognomeResp: Incarnato
+facsimileTelephoneNumber: 0773652566
+telephonenumberResp: 0773652243
+telephoneNumber: 0773652343
+mailResp: segretariogenerale@comune.latina.it
+CodiceUnivocoUO: 98ZHW4
+mail: segreteria.generale@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 98ZHW4
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652343
+MailRespSFE: segretariogenerale@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ser4100, c_e472, it
+dn: ou=ser4100,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Programmazione e Bilancio
+ou: ser4100
+o: c_e472
+street: Via Duca del Mare
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giuseppe
+cognomeResp: Manzi
+mailResp: giuseppe.manzi@comune.latina.it
+CodiceUnivocoUO: POAJSB
+mail: servizio.ragioneria@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: POAJSB
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652780
+MailRespSFE: giuseppe.manzi@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+nomeS: 1#UOC Societa Partecipate patto stabilita e limiti di spesa
+nomeS: 2#UOC Bilancio Programmazione Finanziaria
+nomeS: 3#UOS Trattamento Fiscale e Previdenziale dipendenti e amministratori
+nomeS: 4#UOC Contabilita Generale
+descrizioneS: 1#UOC Societa Partecipate patto stabilita e limiti di spesa
+descrizioneS: 2#UOC Bilancio Programmazione Finanziaria
+descrizioneS: 3#UOS Trattamento Fiscale e Previdenziale dipendenti e amministr
+ atori
+descrizioneS: 4#UOC Contabilita Generale
+fruibS: 1#false
+fruibS: 2#false
+fruibS: 3#false
+fruibS: 4#false
+mailSPub: 1#s
+mailSPub: 2#s
+mailSPub: 3#s
+mailSPub: 4#s
+
+# ser4200, c_e472, it
+dn: ou=ser4200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Tributi
+ou: ser4200
+o: c_e472
+street: Via Duca del Mare - Palazzo Pegasol
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giuseppe
+cognomeResp: Manzi
+telephoneNumber: 0773652739
+mailResp: giuseppe.manzi@comune.latina.it
+CodiceUnivocoUO: 4PAFA0
+mail: ufficio.tia@pec.comune.latina.it
+contatti: servizio.tributi@pec.comune.latina.it#pec
+dataVerifica: 2015-03-31
+codiceUO: 4PAFA0
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652780
+MailRespSFE: g.dellapenna@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-04-03
+dataAvvioSFE: 2015-03-31
+
+# ser4300, c_e472, it
+dn: ou=ser4300,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Patrimonio e Demanio
+ou: ser4300
+o: c_e472
+street: Via Duca del Mare - Palazzo Pegasol
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Elena
+cognomeResp: Lusena
+mailResp: lusena.elena@pec.comune.latina.it
+CodiceUnivocoUO: D209J7
+mail: servizio.patrimonio@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: D209J7
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652552
+MailRespSFE: lusena.elena@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ser5100, c_e472, it
+dn: ou=ser5100,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Urbanistica
+ou: ser5100
+o: c_e472
+street: Piazza del Popolo, 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Alessandra
+cognomeResp: Pacifico
+mailResp: alessandra.pacifico@comune.latina.it
+CodiceUnivocoUO: 0J2FR2
+mail: servizio.urbanistica@comune.latina.it
+contatti: servizio.espropri@pec.comune.latina.it#pec
+dataVerifica: 2015-03-31
+codiceUO: 0J2FR2
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652284
+MailRespSFE: alessandra.pacifico@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ser5200, c_e472, it
+dn: ou=ser5200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Edilizia Pubblica e Privata
+ou: ser5200
+o: c_e472
+street: Piazza del Popolo, 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giovanni
+cognomeResp: Della Penna
+mailResp: g.dellapenna@comune.latina.it
+CodiceUnivocoUO: J8E0AC
+mail: erp@pec.comune.latina.it
+contatti: servizio.ediliziaprivata@pec.comune.latina.it#pec
+dataVerifica: 2015-03-31
+codiceUO: J8E0AC
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652546
+MailRespSFE: g.dellapenna@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-04-03
+dataAvvioSFE: 2015-03-31
+
+# ser5300, c_e472, it
+dn: ou=ser5300,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Ambiente
+ou: ser5300
+o: c_e472
+street: Piazza del Popolo, 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Grazia
+cognomeResp: De Simone
+mailResp: desimone.grazia@pec.comune.latina.it
+CodiceUnivocoUO: PKADJ5
+mail: servizio.ambiente@pec.comune.latina.it
+contatti: verdepubblico@pec.comune.latina.it#pec
+dataVerifica: 2015-03-31
+codiceUO: PKADJ5
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 07731533105
+MailRespSFE: desimone.grazia@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-04-03
+dataAvvioSFE: 2015-03-31
+
+# ser6100, c_e472, it
+dn: ou=ser6100,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Lavori Pubblici
+ou: ser6100
+o: c_e472
+street: Piazza del Popolo, 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giovanni
+cognomeResp: Della Penna
+mailResp: dellapenna.giovanni@pec.comune.latina.it
+CodiceUnivocoUO: K9M41E
+mail: llpp.manutenzioni@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: K9M41E
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652671
+MailRespSFE: dellapenna.giovanni@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2017-03-10
+dataAvvioSFE: 2015-03-31
+
+# ser6200, c_e472, it
+dn: ou=ser6200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Mobilita e Trasporti
+ou: ser6200
+o: c_e472
+street: Viale Cervone
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Francesco
+cognomeResp: Passaretti
+telephoneNumber: 077340081
+mailResp: passaretti.francesco@pec.comune.latina.it
+CodiceUnivocoUO: IABEAE
+mail: servizio.mobilita@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: IABEAE
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 077340081
+MailRespSFE: passaretti.francesco@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-04-03
+dataAvvioSFE: 2015-03-31
+
+# ser7300, c_e472, it
+dn: ou=ser7300,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizi alla Persona, Programmazione Progettazione Sociale Distre
+ ttuale
+ou: ser7300
+o: c_e472
+street: Via Duca del Mare
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Antonella
+cognomeResp: Galardo
+telephonenumberResp: 07736521
+telephoneNumber: 07736521
+mailResp: emanuela.pacifico@comune.latina.it
+CodiceUnivocoUO: M7D5BI
+mail: servizi.sociali@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: M7D5BI
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652790
+MailRespSFE: emanuela.pacifico@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2017-05-02
+dataAvvioSFE: 2015-03-31
+
+# ser8100, c_e472, it
+dn: ou=ser8100,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Attivita' Culturali
+ou: ser8100
+o: c_e472
+street: Piazza del Popolo
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Umberto
+cognomeResp: Cappiello
+telephonenumberResp: 0773690695
+mailResp: cappiello.umberto@pec.comune.latina.it
+CodiceUnivocoUO: ACO6KM
+mail: scuolaculturasport@pec.comune.latina.it
+contatti: museipinacoteche@pec.comune.latina.it#pec
+dataVerifica: 2015-03-31
+codiceUO: ACO6KM
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773690695
+MailRespSFE: paniccia.giancarlo@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ser8200, c_e472, it
+dn: ou=ser8200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Promozione sportiva
+ou: ser8200
+o: c_e472
+street: Viale Umberto I - Teatro Comunale
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Umberto
+cognomeResp: Cappiello
+mailResp: cappiello.umberto@pec.comune.latina.it
+CodiceUnivocoUO: 109EEE
+mail: scuolaculturasport@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 109EEE
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652552
+MailRespSFE: lusena.elena@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-04-03
+dataAvvioSFE: 2015-03-31
+
+# ser8300, c_e472, it
+dn: ou=ser8300,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Attivita Produttive e Suap
+ou: ser8300
+o: c_e472
+street: Via Bonn
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Grazia
+cognomeResp: De Simone
+mailResp: grazia.desimone@comune.latina.it
+CodiceUnivocoUO: BG40QD
+mail: servizio.attivitaproduttive@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: BG40QD
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 07731757321
+MailRespSFE: grazia.desimone@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2018-04-27
+dataAvvioSFE: 2015-03-31
+
+# SerAffGen, c_e472, it
+dn: ou=SerAffGen,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Affari Generali
+ou: SerAffGen
+o: c_e472
+street: Piazza del Popolo
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Paola
+cognomeResp: Bragaloni
+mailResp: galardo.antonella@pec.comune.latina.it
+CodiceUnivocoUO: 9I2LL5
+mail: servizio.affarigenerali@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 9I2LL5
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 07731757366
+MailRespSFE: antonella.galardo@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2017-05-02
+dataAvvioSFE: 2015-03-31
+
+# ServAffariIstit, c_e472, it
+dn: ou=ServAffariIstit,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Affari Istituzionali
+ou: ServAffariIstit
+o: c_e472
+street: Piazza del Popolo, 4
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giovanni
+cognomeResp: Della Penna
+telephonenumberResp: 0773652546
+mailResp: g.dellapenna@comune.latina.it
+CodiceUnivocoUO: ULPCN1
+mail: servizio.affariistituzionali@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: ULPCN1
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652546
+MailRespSFE: g.dellapenna@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ServDemDec, c_e472, it
+dn: ou=ServDemDec,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Demografico e Decentramento
+ou: ServDemDec
+o: c_e472
+street: Via Ezio, 36
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Antonella
+cognomeResp: Galardo
+telephoneNumber: 0773652645
+mailResp: antonella.galardo@comune.latina.it
+CodiceUnivocoUO: XE1PR3
+mail: servizio.demografico@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: XE1PR3
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652645
+MailRespSFE: antonella.galardo@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ServGareContratt, c_e472, it
+dn: ou=ServGareContratt,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Gare e Contratti
+ou: ServGareContratt
+o: c_e472
+street: Piazza del Popolo, 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Emanuela
+cognomeResp: Pacifico
+telephoneNumber: 0773652676
+mailResp: emanuela.pacifico@comune.latina.it
+CodiceUnivocoUO: JEWFQG
+mail: servizio.gare@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: JEWFQG
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652676
+MailRespSFE: emanuela.pacifico@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ServGrandiOpere, c_e472, it
+dn: ou=ServGrandiOpere,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Grandi Opere e Finanza di Progetto
+ou: ServGrandiOpere
+o: c_e472
+street: Piazza del Popolo, 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Lorenzo
+cognomeResp: Le Donne
+mailResp: ledonne.lorenzo@pec.comune.latina.it
+CodiceUnivocoUO: POBU90
+mail: grandiopere@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: POBU90
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652671
+MailRespSFE: ledonne.lorenzo@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ServManutenzioni, c_e472, it
+dn: ou=ServManutenzioni,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Manutenzioni
+ou: ServManutenzioni
+o: c_e472
+street: Corso della Repubblica, 118
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giovanni
+cognomeResp: Della Penna
+mailResp: dellapenna.giovanni@pec.comune.latina.it
+CodiceUnivocoUO: OXOCYM
+mail: llpp.manutenzioni@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: OXOCYM
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652671
+MailRespSFE: dellapenna.giovanni@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2017-03-10
+dataAvvioSFE: 2015-03-31
+
+# ServPolizMunicip, c_e472, it
+dn: ou=ServPolizMunicip,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Polizia Municipale
+ou: ServPolizMunicip
+o: c_e472
+street: Piazza dei Mercanti
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Francesco
+cognomeResp: Passaretti
+telephoneNumber: 077346661
+mailResp: passaretti.francesco@pec.comune.latina.it
+CodiceUnivocoUO: RE6060
+mail: servizio.polizialocale@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: RE6060
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 077346661
+MailRespSFE: passaretti.francesco@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# ServRisUmane, c_e472, it
+dn: ou=ServRisUmane,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Servizio Risorse Umane
+ou: ServRisUmane
+o: c_e472
+street: Piazza del Popolo
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Immacolata
+cognomeResp: Pizzella
+telephoneNumber: 0773652480
+mailResp: segreteria.personale@comune.latina.it
+CodiceUnivocoUO: JGABKI
+mail: servizio.affaripersonale@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: JGABKI
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652480
+MailRespSFE: segreteria.personale@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# Uff-Elettorale, ServDemDec, c_e472, it
+dn: ou=Uff-Elettorale,ou=ServDemDec,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Elettorale
+ou: Uff-Elettorale
+o: c_e472
+street: Via Ezio
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Cristina
+cognomeResp: Bellomo
+mailResp: cristina.bellomo@comune.latina.it
+CodiceUnivocoUO: ZQE0U5
+mail: elettorale@pec.comune.latina.it
+
+# Uff-Turismo, ser8300, c_e472, it
+dn: ou=Uff-Turismo,ou=ser8300,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Attivita Produttive - Ufficio Turismo
+ou: Uff-Turismo
+o: c_e472
+street: Via Bonn
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giancarlo
+cognomeResp: Paniccia
+mailResp: paniccia.giancarlo@pec.comune.latina.it
+CodiceUnivocoUO: T5285U
+mail: servizio.attivitaproduttive@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: T5285U
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773690695
+MailRespSFE: desimone.grazia@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2018-04-27
+dataAvvioSFE: 2015-03-31
+
+# UffAsiliNido, ser7200, c_e472, it
+dn: ou=UffAsiliNido,ou=ser7200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Asili Nido
+ou: UffAsiliNido
+o: c_e472
+street: Viale Umberto I
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Emanuela
+cognomeResp: Pacifico
+CodiceUnivocoUO: 2QAIKH
+mail: asilinido@comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 2QAIKH
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652634
+MailRespSFE: asilinido@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# UffFarmacie, ser7200, c_e472, it
+dn: ou=UffFarmacie,ou=ser7200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Farmacie
+ou: UffFarmacie
+o: c_e472
+street: viale Kennedy n.42
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Emanuela
+cognomeResp: Pacifico
+CodiceUnivocoUO: 2NTLOH
+mail: farmacia@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 2NTLOH
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773600617
+MailRespSFE: farmacia@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# Ufficio_Transizione_Digitale, c_e472, it
+dn: ou=Ufficio_Transizione_Digitale,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio per la transizione al Digitale
+ou: Ufficio_Transizione_Digitale
+o: c_e472
+street: Piazza del Popolo 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Daniela
+cognomeResp: Ventriglia
+telephonenumberResp: 07736521
+telephoneNumber: 07736521
+mailResp: sistemi.informativi@comune.latina.it
+CodiceUnivocoUO: LHNTWI
+mail: protocollo@pec.comune.latina.it
+contatti: sistemi.informativi@pec.comune.latina.it#pec
+
+# UffProgettiUE, c_e472, it
+dn: ou=UffProgettiUE,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Progetti Unione Europea
+ou: UffProgettiUE
+o: c_e472
+street: Via Umberto I, 9
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Lorenzo
+cognomeResp: Le Donne
+telephoneNumber: 0773652635
+CodiceUnivocoUO: PEY8IE
+mail: rapporti.istituzionali@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: PEY8IE
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652635
+MailRespSFE: rapporti.istituzionali@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-17
+dataAvvioSFE: 2015-03-31
+
+# UffProtCiv, c_e472, it
+dn: ou=UffProtCiv,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Protezione Civile
+ou: UffProtCiv
+o: c_e472
+street: Corso Matteotti, 143 - 145
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Francesco
+cognomeResp: Passaretti
+telephoneNumber: 0773400000
+mailResp: passaretti.francesco@pec.comune.latina.it
+CodiceUnivocoUO: Q1Q4PC
+mail: protezione.civile@comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: Q1Q4PC
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773662742
+MailRespSFE: passaretti.francesco@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-04-03
+dataAvvioSFE: 2015-03-31
+
+# UffViabilita, ser6200, c_e472, it
+dn: ou=UffViabilita,ou=ser6200,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Viabilita e Traffico
+ou: UffViabilita
+o: c_e472
+street: Via Cervone, 2 04100 Latina
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Francesco
+cognomeResp: Passaretti
+telephonenumberResp: 0773400837
+telephoneNumber: 077340081
+mailResp: passaretti.francesco@comune.latina.it
+CodiceUnivocoUO: L243FN
+mail: servizio.mobilita@pec.comune.latina.it
+contatti: gianni.pasquariello@comune.latina.it#altro
+dataVerifica: 2015-03-31
+codiceUO: L243FN
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773400837
+MailRespSFE: servizio.mobilita@comune.latina.it
+intermediarioSFE: si
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-10-15
+dataAvvioSFE: 2015-03-31
+
+# Uff_DistrPiano, ser7300, c_e472, it
+dn: ou=Uff_DistrPiano,ou=ser7300,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Distrettuale di Piano - Sostegno Genitorialita e Infanzia
+  - etc.
+ou: Uff_DistrPiano
+o: c_e472
+street: Via Duca del Mare
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Antonella
+cognomeResp: Galardo
+mailResp: antonella.galardo@comune.latina.it
+CodiceUnivocoUO: 5PPQ6E
+mail: servizi.sociali@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 5PPQ6E
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652790
+MailRespSFE: emanuela.pacifico@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2017-05-02
+dataAvvioSFE: 2015-03-31
+
+# Uff_Economato, SerAffGen, c_e472, it
+dn: ou=Uff_Economato,ou=SerAffGen,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Provveditorato Economato Cassa
+ou: Uff_Economato
+o: c_e472
+street: Via Bonn 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giuliana
+cognomeResp: Bozzo
+telephonenumberResp: 07731757364
+telephoneNumber: 07731757364
+mailResp: giuliana.bozzo@comune.latina.it
+CodiceUnivocoUO: HH2O4Q
+mail: servizio.economato@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: HH2O4Q
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 07731757364
+MailRespSFE: economato@comune.latina.it
+intermediarioSFE: si
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-10-15
+dataAvvioSFE: 2015-03-31
+
+# Uff_eFatturaPA, c_e472, it
+dn: ou=Uff_eFatturaPA,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Uff_eFatturaPA
+ou: Uff_eFatturaPA
+o: c_e472
+street: Piazza del Popolo, 1
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Giuseppe
+cognomeResp: Manzi
+telephonenumberResp: 0773653459
+mailResp: servizio.ragioneria@pec.comune.latina.it
+CodiceUnivocoUO: UFV2TM
+mail: servizio.ragioneria@comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: UFV2TM
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773653459
+MailRespSFE: servizio.ragioneria@pec.comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+URISFE: null
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-03-24
+dataAvvioSFE: 2015-03-31
+
+# Uff_Energia, ServManutenzioni, c_e472, it
+dn: ou=Uff_Energia,ou=ServManutenzioni,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Energia
+ou: Uff_Energia
+o: c_e472
+street: Corso della Repubblica, 118
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Luciana
+cognomeResp: D'Ascanio
+telephonenumberResp: 0773652574
+telephoneNumber: 07736521
+mailResp: luciana.dascanio@comune.latina.it
+CodiceUnivocoUO: 59DWRC
+mail: energia@comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 59DWRC
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652574
+MailRespSFE: energia@comune.latina.it
+intermediarioSFE: si
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2015-10-15
+dataAvvioSFE: 2015-03-31
+
+# Uff_InclSociale, ser7300, c_e472, it
+dn: ou=Uff_InclSociale,ou=ser7300,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Inclusione Sociale
+ou: Uff_InclSociale
+o: c_e472
+street: Via Duca del Mare
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Antonella
+cognomeResp: Galardo
+mailResp: antonella.galardo@comune.latina.it
+CodiceUnivocoUO: 7N37X5
+mail: servizi.sociali@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: 7N37X5
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652790
+MailRespSFE: emanuela.pacifico@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2017-05-02
+dataAvvioSFE: 2015-03-31
+
+# Uff_SerSocAss, ser7300, c_e472, it
+dn: ou=Uff_SerSocAss,ou=ser7300,o=c_e472,c=it
+objectClass: top
+objectClass: organization
+objectClass: organizationalUnit
+objectClass: ufficio
+description: Ufficio Servizi Socio-Assistenziali
+ou: Uff_SerSocAss
+o: c_e472
+street: Via Duca del Mare
+postalCode: 04100
+l: Latina
+provincia: LT
+regione: Lazio
+nomeResp: Antonella
+cognomeResp: Galardo
+mailResp: antonella.galardo@comune.latina.it
+CodiceUnivocoUO: HGDPWC
+mail: servizi.sociali@pec.comune.latina.it
+dataVerifica: 2015-03-31
+codiceUO: HGDPWC
+nomeSFE: FATTURAZIONE
+canaleTrasmissivoSFE: PEC
+telephonenumberRespSFE: 0773652790
+MailRespSFE: emanuela.pacifico@comune.latina.it
+intermediarioSFE: no
+mailSFE: Uff_eFatturaPA@pec.comune.latina.it
+mailSFEPEC: pec
+codiceFiscaleSFE: 00097020598
+dataVerificaCFSFE: 2017-05-02
+dataAvvioSFE: 2015-03-31
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 103
+# numEntries: 102

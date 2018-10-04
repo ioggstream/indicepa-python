@@ -1,0 +1,210 @@
+x-commons:
+  common_parameters:
+    - in: query
+      name: fields
+      schema:
+        type: string
+    - in: query
+      name: limit
+      schema:
+        type: number
+openapi: 3.0.1
+info:
+  title: iPA unofficial.
+  version: 0rc1
+  x-summary: 'Informazioni su Amministrazioni, Uffici ed AOO.'
+  contact:
+    email: robipolli@gmail.com
+    name: Roberto Polli
+    url: 'https://twitter.com/ioggstream'
+  description: >
+    #### Documentazione
+
+    Il servizio permette di interrogare indicePA.
+
+
+    ##### Sottosezioni
+
+    E' possibile utilizzare - con criterio - delle sottosezioni.
+
+
+    #### Note
+
+
+    Il servizio non richiede autenticazione, ma va' usato rispettando gli
+
+    header di throttling esposti in conformita' alle Linee Guida del Modello di
+    interoperabilita'.
+
+
+    #### Informazioni tecniche ed esempi
+
+
+    Esempio:
+
+
+    ```
+
+    http http://localhost:8443/ipa/v1/amministrazione/c_e472
+
+
+    ```
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  termsOfService: 'http://swagger.io/terms/'
+  x-api-id: 00000000-0000-0000-0000-000000000000
+  x-audience:
+    - public
+servers:
+  - description: Development server
+    url: 'https://localhost:8443/ipa/v0'
+  - description: Test server
+    url: 'https://api.example.com/ipa/v0'
+tags:
+  - description: Retrieve informations
+    externalDocs:
+      url: 'http://docs.my-api.com/pet-operations.htm'
+    name: public
+paths:
+  /amministrazioni:
+    get:
+      operationId: api.get_amministrazioni
+      parameters:
+        - in: query
+          name: codice_ipa
+          schema:
+            type: string
+        - in: query
+          name: codice_fiscale
+          schema:
+            type: string
+        - in: query
+          name: descrizione
+          schema:
+            type: string
+        - in: query
+          name: mail
+          schema:
+            type: string
+        - in: query
+          name: fields_a
+          schema:
+            type: array
+            items:
+              type: string
+        - in: query
+          name: fields
+          schema:
+            type: string
+        - in: query
+          name: limit
+          schema:
+            type: number
+      responses:
+        '200':
+          description: foo
+          content:
+            application/json:
+              schema:
+                properties:
+                  entries:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Amministrazione'
+  '/amministrazione/{codice_ipa}':
+    get:
+      operationId: api.get_amministrazione
+      parameters:
+        - in: path
+          name: codice_ipa
+          schema:
+            type: string
+          required: true
+        - in: query
+          name: fields
+          schema:
+            type: string
+        - in: query
+          name: limit
+          schema:
+            type: number
+      responses:
+        '200':
+          description: bar
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Amministrazione'
+components:
+  schemas:
+    Problem:
+      $ref: 'https://teamdigitale.github.io/openapi/schemas/problem.yaml#/Problem'
+    Amministrazione:
+      properties:
+        location:
+          $ref: '#/components/schemas/Location'
+        responsabile:
+          $ref: '#/components/schemas/Responsabile'
+        servizi:
+          type: array
+          items:
+            $ref: '#/components/schemas/Servizio'
+        codice_ipa:
+          description: cod_amm
+          type: string
+        codice_fiscale:
+          description: CF
+          type: string
+        descrizione:
+          description: des_amm
+          type: string
+        mail:
+          type: array
+          items:
+            type: string
+            format: email
+        categoria:
+          type: string
+        tipologia:
+          type: string
+        sito_istituzionale:
+          type: string
+          format: url
+    Responsabile:
+      properties:
+        nome_proprio:
+          description: nome_resp
+          type: string
+        cognome:
+          description: cogn_resp
+          type: string
+        titolo:
+          description: titolo_rep
+          type: string
+    Location:
+      properties:
+        indirizzo:
+          type: string
+        cap:
+          type: string
+        comune:
+          type: string
+        provincia:
+          type: string
+        regione:
+          type: string
+    Servizio:
+      properties:
+        nome:
+          type: string
+        fruibilita:
+          type: string
+        descrizione:
+          type: string
+        progressivo:
+          type: string
+        mail:
+          type: string
+        url:
+          type: string
