@@ -26,7 +26,9 @@ def remove_nulls(d):
 
 class JsonMixin(object):
 
-    _mappa_campi = {}
+    def __init__(self):
+        self.links: list = None
+        self._mappa_campi = {}
 
     @classmethod
     def q_fields(cls):
@@ -37,9 +39,10 @@ class JsonMixin(object):
 
     def json(self):
         # XXX This could be optimized
-        return json.dumps(
-            json.loads(json.dumps(asdict(self)), object_hook=remove_nulls)
-        )
+        ret = json.loads(json.dumps(asdict(self)), object_hook=remove_nulls)
+        if hasattr(self, 'links'):
+            ret.update({'links': self.links})
+        return json.dumps(ret)
 
     def yaml(self):
         return yaml.dump(yaml.load(self.json()), default_flow_style=0)
@@ -58,13 +61,13 @@ class FatturazioneElettronica(JsonMixin):
 
     """
 
-    nome: str
-    # TODO: il codiceFiscale della Fatturazione Elettronica è anche quello
-    # dell'ente?q
-    codiceFiscale: str
-    canaleTrasmissivo: str
-    dataAvvio: datetime
-    dataVerificaCodiceFiscale: datetime
+    nome: str = None
+    # NB: il codiceFiscale della Fatturazione Elettronica non è necessariamente
+    #     quello dell'ente
+    codiceFiscale: str = None
+    canaleTrasmissivo: str = None
+    dataAvvio: datetime = None
+    dataVerificaCodiceFiscale: datetime = None
     uri: str = None
     intermediario: str = None
     mail: str = None

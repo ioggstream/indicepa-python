@@ -6,17 +6,23 @@ from os.path import isfile
 
 import connexion
 import yaml
+from connexion import ProblemException
 from flask import current_app as app
 from flask.json import JSONEncoder
 from ipa.model import JsonMixin
 from ldap3 import ALL, Connection, Server  # TODO: use connection pool
+from ldap3.utils.log import EXTENDED, NETWORK, set_library_log_detail_level
+
+set_library_log_detail_level(NETWORK)
 
 
 def configure_logger(log_config="logging.yaml"):
     """Configure the logging subsystem."""
     if not isfile(log_config):
         return basicConfig()
+    set_library_log_detail_level(NETWORK)
 
+    return
     with open(log_config) as fh:
         log_config = yaml.load(fh)
         return dictConfig(log_config)
@@ -25,9 +31,13 @@ def configure_logger(log_config="logging.yaml"):
 def connect3(host, user, password):
     s = Server(host, use_ssl=False, get_info=ALL)
     c = Connection(s, user=user, password=password)
+    set_library_log_detail_level(EXTENDED)
+
     app.logger.debug("Binding")
     if not c.bind():
-        raise Exception(c.result)
+        raise ProblemException(
+            detail=c.result, title="Internal Server Error", status=500
+        )
     app.logger.debug("Bound")
     return c
 
@@ -44,16 +54,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
-        "--credential",
-        dest="credential",
+        "--config",
+        dest="config",
         required=False,
-        help="Point to the IdP metadata URL",
-        default=False,
+        help="The config file containing LDAP credentials.",
+        default="config.yaml",
     )
     args = parser.parse_args()
 
     zapp = connexion.FlaskApp(__name__, port=8443, specification_dir="./")
-    with open("config.yaml") as fh:
+    with open(args.config) as fh:
         zapp.app.config.update(yaml.load(fh))
 
     zapp.app.json_encoder = DataclassEncoder

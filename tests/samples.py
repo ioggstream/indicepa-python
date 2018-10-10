@@ -1,3 +1,6 @@
+#
+# flake8: noqa
+#
 c_e472 = [
     {
         "raw_dn": b"o=c_e472,c=it",
@@ -485,7 +488,15 @@ c_e472 = {
         "6#Residenze in tempo reale",
         "7#Ufficio di Stato Civile",
     ],
-    "fruibS": ["1#true", "2#true", "3#true", "4#true", "5#true", "6#true", "7#true"],
+    "fruibS": [
+        "1#true",
+        "2#true",
+        "3#true",
+        "4#true",
+        "5#true",
+        "6#true",
+        "7#true",
+    ],
     "mailS": [
         "1#accessocivico@pec.comune.latina.it",
         "2#servizio.gare@pec.comune.latina.it",

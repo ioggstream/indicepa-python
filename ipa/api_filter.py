@@ -4,10 +4,13 @@
 from ipa.model import Amministrazione, Location, Responsabile, Servizio
 
 
-def parse_filter(q_filter):
-    mappa_attributi = Amministrazione.q_fields()
+def parse_fields(q_filter, cls=Amministrazione):
+    mappa_attributi = cls.q_fields()
     items = list(q_filter.split(","))
-    ret = []
+
+    # Add compulsory attributes.
+    ret = ['objectClass', 'o', 'description']
+
     if "location" in items:
         items.remove("location")
         ret += [ldap_f for api_f, ldap_f in Location.q_fields().items()]
@@ -19,6 +22,8 @@ def parse_filter(q_filter):
     if "servizi" in items:
         items.remove("servizi")
         ret += [ldap_f for api_f, ldap_f in Servizio.q_fields().items()]
+
+    # TODO fatturazione
 
     ret += [mappa_attributi[i] for i in items]
     return ret
