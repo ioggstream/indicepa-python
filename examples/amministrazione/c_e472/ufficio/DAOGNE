@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "codice_ipa": "c_e473",
+      "codice_univoco_ufficio": "DAOGNE",
+      "descrizione": "Ufficio Protocollo",
+      "links": {
+        "parent": "https://localhost:8443/ipa/v0/amministrazione/c_e473/amministrazione/c_e473",
+        "self": "https://localhost:8443/ipa/v0/amministrazione/c_e473/ufficio/DAOGNE"
+      },
+      "location": {
+        "cap": "33053",
+        "comune": "Latisana",
+        "indirizzo": "P.zza Indipendenza, 74",
+        "provincia": "UD",
+        "regione": "Friuli Venezia Giulia"
+      },
+      "mail": [
+        "comune.latisana@certgov.fvg.it"
+      ]
+    }
+  ]
+}
