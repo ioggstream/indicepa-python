@@ -4,7 +4,7 @@ from collections import defaultdict
 from datetime import datetime
 
 import yaml
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict, dataclass, field, fields, is_dataclass
 
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
@@ -29,6 +29,13 @@ class JsonMixin(object):
     def __init__(self):
         self.links: list = None
         self._mappa_campi = {}
+
+    @property
+    def id(self):
+        if is_dataclass(self):
+            f_name = fields(self)[0].name
+            return getattr(self, f_name)
+        raise TypeError("Should be dataclass")
 
     @classmethod
     def q_fields(cls):
@@ -169,9 +176,9 @@ class Location(JsonMixin):
 
 @dataclass
 class Ufficio(JsonMixin):
+    codice_univoco_ufficio: str
     codice_ipa: str
     descrizione: str
-    codice_univoco_ufficio: str
     mail: list = field(default_factory=list)
     contatti: list = field(default_factory=list)  # FIXME merge mail and contatti
     location: Location = None
@@ -234,9 +241,9 @@ class AOO(JsonMixin):
 
     """
 
-    codice_ipa: str
-    codice_aoo: str
-    descrizione: str
+    codice_aoo: str = None
+    codice_ipa: str = None
+    descrizione: str = None
     istituita_il: datetime = None
     soppressa_il: datetime = None
     mail: str = None
@@ -245,12 +252,12 @@ class AOO(JsonMixin):
     servizi: list = field(default_factory=list)
 
     _mappa_campi = {
-        "dn": "dn",
-        "mail": "mail",
-        "description": "descrizione",
-        "dataIstituzione": "istituita_il",
-        "dataSoppressione": "soppressa_il",
-        "aoo": "codice_aoo",
+        "dn": ("dn", None),
+        "mail": ("mail", None),
+        "description": ("descrizione", ''.join),
+        "dataIstituzione": ("istituita_il", None),
+        "dataSoppressione": ("soppressa_il", None),
+        "aoo": ("codice_aoo", None),
     }
 
     @classmethod
@@ -258,11 +265,15 @@ class AOO(JsonMixin):
         if "aoo" not in kwargs.get("objectClass", []):
             raise ValueError("L'entita' non e' un'AOO.")
 
-        d = {
-            cls._mappa_campi[ldap_k]: ldap_v
-            for ldap_k, ldap_v in kwargs.items()
-            if ldap_k in cls._mappa_campi and ldap_v != "null"
-        }
+        d = {}
+        for ldap_k, ldap_v in kwargs.items():
+            if ldap_v == "null":
+                continue
+            if ldap_k not in cls._mappa_campi:
+                continue
+            ipa_k, formatter = cls._mappa_campi[ldap_k]
+            d.update({ipa_k: formatter(ldap_v) if formatter else ldap_v})
+
         # Il codice_ipa dev'essere passato dall'API.
         d["codice_ipa"] = d["dn"].split(",")[-2][2:]
         del d["dn"]

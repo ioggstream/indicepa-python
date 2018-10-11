@@ -122,7 +122,7 @@ def test_all_aoo():
             a = AOO.from_ldap(dn=entry["dn"], **x)
             print(a.yaml())
         except (IndexError,):
-            log.warning("Errore processando ente: {}", x)
+            log.warning("Errore processando ente: %r", x)
 
 
 def test_all_ufficio():
@@ -142,7 +142,7 @@ def test_all_ufficio():
             a = Ufficio.from_ldap(dn=entry["dn"], **x)
             print(a.yaml())
         except (IndexError,):
-            log.warning("Errore processando ente: {}", x)
+            log.warning("Errore processando ente: %r", x)
 
 
 def test_common_fields_from_entries():
@@ -153,7 +153,7 @@ def test_common_fields_from_entries():
 
     ret = Responsabile.from_ldap(**c_e472)
     yield print, ret.json()
-    yield assert_equals, ret.telefono, "077346631"
+    yield assert_equals, ret.titolo, "Sindaco"
 
 
 def notest_login3():

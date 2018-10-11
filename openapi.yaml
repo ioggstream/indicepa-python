@@ -27,7 +27,11 @@ info:
   description: >
     #### Documentazione
 
-    Il servizio permette di interrogare indicePA.
+    Il servizio permette di interrogare indicePA richiedendo informazioni
+    sui singoli enti, uffici ed aree organizzative omogenee.
+
+    L'API permette di selezionare i campi da recuperare ed i campi su cui filtrare,
+    ritornando un formato dei dati coerente.
 
 
     ##### Sottosezioni
@@ -107,14 +111,8 @@ paths:
           name: mail
           schema:
             type: string
-        - in: query
-          name: fields
-          schema:
-            type: string
-        - in: query
-          name: limit
-          schema:
-            type: number
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/fields'
+        - $ref: https://teamdigitale.github.io/openapi/parameters/v3.yaml#/limit
       responses:
         <<: *common-responses
         '200':
@@ -133,17 +131,12 @@ paths:
       parameters:
         - in: path
           name: codice_ipa
-          schema:
-            type: string
           required: true
-        - in: query
-          name: fields
           schema:
             type: string
-        - in: query
-          name: limit
-          schema:
-            type: number
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/fields'
+        - $ref: https://teamdigitale.github.io/openapi/parameters/v3.yaml#/limit
+
       responses:
         <<: *common-responses
         '200':
@@ -158,6 +151,7 @@ paths:
       parameters:
         - in: path
           name: codice_ipa
+          required: true
           schema:
             type: string
         - in: query
@@ -176,14 +170,8 @@ paths:
           name: mail
           schema:
             type: string
-        - in: query
-          name: fields
-          schema:
-            type: string
-        - in: query
-          name: limit
-          schema:
-            type: number
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/fields'
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/limit'
       responses:
         <<: *common-responses
         '200':
@@ -204,10 +192,12 @@ paths:
           name: codice_ipa
           schema:
             type: string
+          required: true
         - in: path
           name: codice_univoco_ufficio
           schema:
             type: string
+          required: true
         - in: query
           name: codice_fiscale
           schema:
@@ -220,14 +210,63 @@ paths:
           name: mail
           schema:
             type: string
-        - in: query
-          name: fields
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/fields'
+      responses:
+        <<: *common-responses
+        '200':
+          description: foo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ufficio'
+
+  /amministrazione/{codice_ipa}/area_organizzativa_omogenea/{codice_aoo}:
+    get:
+      operationId: api.get_aoo_by_ipa
+      parameters:
+        - in: path
+          name: codice_ipa
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: codice_aoo
+          required: true
           schema:
             type: string
         - in: query
-          name: limit
+          name: descrizione
           schema:
-            type: number
+            type: string
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/fields'
+      responses:
+        <<: *common-responses
+        '200':
+          description: foo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AOO'
+
+  /amministrazione/{codice_ipa}/aree_organizzative_omogenee:
+    get:
+      operationId: api.list_aoo
+      parameters:
+        - in: path
+          name: codice_ipa
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: codice_aoo
+          schema:
+            type: string
+        - in: query
+          name: descrizione
+          schema:
+            type: string
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/fields'
+        - $ref: https://teamdigitale.github.io/openapi/parameters/v3.yaml#/limit
       responses:
         <<: *common-responses
         '200':
@@ -239,7 +278,8 @@ paths:
                   items:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Ufficio'
+                      $ref: '#/components/schemas/AOO'
+
 
   /uffici:
     get:
@@ -265,14 +305,8 @@ paths:
           name: mail
           schema:
             type: string
-        - in: query
-          name: fields
-          schema:
-            type: string
-        - in: query
-          name: limit
-          schema:
-            type: number
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/fields'
+        - $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/limit'
       responses:
         <<: *common-responses
         '200':
@@ -291,6 +325,7 @@ paths:
       parameters:
       - in: path
         name: codice_univoco_ufficio
+        required: true
         schema:
           type: string
       responses:
@@ -391,6 +426,9 @@ components:
           type: string
         url:
           type: string
+    AOO:
+      properties:
+        codice_ipa: {type: string}
 
   responses:
     # Predefined error codes for this API
