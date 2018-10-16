@@ -25,7 +25,6 @@ def remove_nulls(d):
 
 
 class JsonMixin(object):
-
     def __init__(self):
         self.links: list = None
         self._mappa_campi = {}
@@ -47,8 +46,8 @@ class JsonMixin(object):
     def json(self):
         # XXX This could be optimized
         ret = json.loads(json.dumps(asdict(self)), object_hook=remove_nulls)
-        if hasattr(self, 'links'):
-            ret.update({'links': self.links})
+        if hasattr(self, "links"):
+            ret.update({"links": self.links})
         return json.dumps(ret)
 
     def yaml(self):
@@ -180,7 +179,9 @@ class Ufficio(JsonMixin):
     codice_ipa: str
     descrizione: str
     mail: list = field(default_factory=list)
-    contatti: list = field(default_factory=list)  # FIXME merge mail and contatti
+    contatti: list = field(
+        default_factory=list
+    )  # FIXME merge mail and contatti
     location: Location = None
     fatturazione: FatturazioneElettronica = None
 
@@ -254,7 +255,7 @@ class AOO(JsonMixin):
     _mappa_campi = {
         "dn": ("dn", None),
         "mail": ("mail", None),
-        "description": ("descrizione", ''.join),
+        "description": ("descrizione", "".join),
         "dataIstituzione": ("istituita_il", None),
         "dataSoppressione": ("soppressa_il", None),
         "aoo": ("codice_aoo", None),
@@ -323,6 +324,7 @@ class Servizio(JsonMixin):
         for i, v in ret:
             yield Servizio(**v)
 
+
 @dataclass
 class Contatto(JsonMixin):
     mail: str
@@ -335,9 +337,10 @@ class Contatto(JsonMixin):
         :param kwargs:
         :return:
         """
-        if 'contatti' not in kwargs:
+        if "contatti" not in kwargs:
             return []
-        return [Contatto(*x.split("#")) for x in kwargs['contatti']]
+        return [Contatto(*x.split("#")) for x in kwargs["contatti"]]
+
 
 @dataclass
 class Amministrazione(JsonMixin):

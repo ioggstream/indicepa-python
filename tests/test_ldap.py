@@ -13,7 +13,13 @@ from ipa.model import (
     Ufficio,
     is_empty,
 )
-from samples import AvvStudioA_c_e472, c_e472, ced_c_e472, uc_trento, umc_latina_m_inf
+from samples import (
+    AvvStudioA_c_e472,
+    c_e472,
+    ced_c_e472,
+    uc_trento,
+    umc_latina_m_inf,
+)
 from test_config import connect
 
 logging.basicConfig(level=logging.DEBUG)
@@ -74,6 +80,96 @@ def test_entry_ufficio():
             yield ret
 
 
+def test_entry_aoo():
+    from dataclasses import asdict
+    from ipa.model import AOO
+
+    baseurl = "xxx"
+    self_fmt = (
+        f"{baseurl}"
+        "/amministrazione/{codice_ipa}/area_organizzativa_omogenea/{codice_aoo}"
+    )
+    parent_fmt = f"{baseurl}" "/amministrazione/{codice_ipa}"
+
+    entry = {
+        "raw_dn": b"aoo=aoo3000,o=c_e472,c=it",
+        "dn": "aoo=aoo3000,o=c_e472,c=it",
+        "raw_attributes": {
+            "objectClass": [b"top", b"aoo"],
+            "aoo": [b"aoo3000"],
+            "description": [b"AREA AFFARI GENERALI E PERSONALE"],
+            "postalCode": [b"04100"],
+            "l": [b"Latina"],
+            "provincia": [b"LT"],
+            "regione": [b"Lazio"],
+            "nomeResp": [b"Lorenzo"],
+            "cognomeResp": [b"Le Donne"],
+            "street": [b"Piazza del Popolo, 1"],
+            "dataIstituzione": [b"2011-03-25"],
+            "dataSoppressione": [b"2012-06-29"],
+            "mailResp": [b"ledonne.lorenzo@pec.comune.latina.it"],
+            "mail": [b"servizio.affarigenerali@pec.comune.latina.it"],
+            "nomeS": [
+                b"1#SERVIZIO AFFARI GENERALI",
+                b"2#SERVIZIO GARE E APPALTI",
+                b"3#SERVIZIO  RISORSE UMANE",
+            ],
+            "descrizioneS": [
+                b"1#SERVIZIO AFFARI GENERALI",
+                b"2#SERVIZIO GARE E APPALTI",
+                b"3#SERVIZIO  RISORSE UMANE",
+            ],
+            "fruibS": [b"1#false", b"2#false", b"3#false"],
+            "mailS": [
+                b"1#servizio.affarigenerali@pec.comune.latina.it",
+                b"3#servizio.affaripersonale@pec.comune.latina.it",
+            ],
+            "mailSPub": [b"1#s", b"2#n", b"3#s"],
+        },
+        "attributes": {
+            "objectClass": ["top", "aoo"],
+            "aoo": "aoo3000",
+            "description": ["AREA AFFARI GENERALI E PERSONALE"],
+            "postalCode": ["04100"],
+            "l": ["Latina"],
+            "provincia": "LT",
+            "regione": "Lazio",
+            "nomeResp": "Lorenzo",
+            "cognomeResp": "Le Donne",
+            "street": ["Piazza del Popolo, 1"],
+            "dataIstituzione": "2011-03-25",
+            "dataSoppressione": "2012-06-29",
+            "mailResp": "ledonne.lorenzo@pec.comune.latina.it",
+            "mail": ["servizio.affarigenerali@pec.comune.latina.it"],
+            "nomeS": [
+                "1#SERVIZIO AFFARI GENERALI",
+                "2#SERVIZIO GARE E APPALTI",
+                "3#SERVIZIO  RISORSE UMANE",
+            ],
+            "descrizioneS": [
+                "1#SERVIZIO AFFARI GENERALI",
+                "2#SERVIZIO GARE E APPALTI",
+                "3#SERVIZIO  RISORSE UMANE",
+            ],
+            "fruibS": ["1#false", "2#false", "3#false"],
+            "mailS": [
+                "1#servizio.affarigenerali@pec.comune.latina.it",
+                "3#servizio.affaripersonale@pec.comune.latina.it",
+            ],
+            "mailSPub": ["1#s", "2#n", "3#s"],
+        },
+        "type": "searchResEntry",
+    }
+    x = entry["attributes"]
+    x["dn"] = entry["dn"]
+    a = AOO.from_ldap(**x)
+    a.links = {
+        "self": self_fmt.format(**asdict(a)),
+        "parent": parent_fmt.format(**asdict(a)),
+    }
+    # raise NotImplementedError
+
+
 def harn_entry_ufficio(ufficio):
     for Cls in (FatturazioneElettronica, Responsabile, Location, Ufficio):
         ret = Cls.from_ldap(**ufficio)
@@ -84,65 +180,6 @@ def test_pa():
     for a in (c_e472, uc_trento):
         a = Amministrazione.from_ldap(**a)
         yield print, a.yaml()
-
-
-def test_all_pa():
-    c = connect()
-    c.search(
-        search_base="c=it",
-        search_scope=1,
-        attributes="*",
-        size_limit=10,
-        search_filter="(&(objectclass=amministrazione)(codiceFiscaleAmm=*))",
-    )
-    for entry in c.response:
-        x = entry["attributes"]
-        # print("=" * 40, x)
-        try:
-            a = Amministrazione.from_ldap(**x)
-            log.debug(a.yaml())
-        except:
-            log.warning("Errore processando ente: {}", x)
-
-
-def test_all_aoo():
-    # aoo=SUAP,o=c_e472,c=it
-    c = connect()
-    c.search(
-        search_base="c=it",
-        search_scope=2,
-        attributes="*",
-        size_limit=10,
-        search_filter="(&(objectclass=aoo)(o=c_e472))",
-    )
-    for entry in c.response:
-        x = entry["attributes"]
-        print("=" * 40, x)
-        try:
-            a = AOO.from_ldap(dn=entry["dn"], **x)
-            print(a.yaml())
-        except (IndexError,):
-            log.warning("Errore processando ente: %r", x)
-
-
-def test_all_ufficio():
-    # aoo=SUAP,o=c_e472,c=it
-    c = connect()
-    c.search(
-        search_base="c=it",
-        search_scope=2,
-        attributes="*",
-        size_limit=10,
-        search_filter="(&(objectclass=ufficio)(o=c_e472))",
-    )
-    for entry in c.response:
-        x = entry["attributes"]
-        print("=" * 40, x)
-        try:
-            a = Ufficio.from_ldap(dn=entry["dn"], **x)
-            print(a.yaml())
-        except (IndexError,):
-            log.warning("Errore processando ente: %r", x)
 
 
 def test_common_fields_from_entries():
@@ -158,22 +195,3 @@ def test_common_fields_from_entries():
 
 def notest_login3():
     connect()
-
-
-def notest_search_latina3():
-    c = connect()
-    c.search(
-        search_base="c=it",
-        search_scope=2,
-        attributes="*",
-        size_limit=10,
-        search_filter="(o=c_e472)",
-    )
-    for entry in c.response:
-        x = entry["attributes"]
-        print("=" * 40, x)
-        try:
-            print("location", Location.from_ldap(**x).json())
-            print("responsabile", Responsabile.from_ldap(**x).json())
-        except:
-            raise

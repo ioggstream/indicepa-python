@@ -9,7 +9,7 @@ def parse_fields(q_filter, cls=Amministrazione):
     items = list(q_filter.split(","))
 
     # Add compulsory attributes.
-    ret = ['objectClass', 'o', 'description']
+    ret = ["objectClass", "o", "description"]
 
     if "location" in items:
         items.remove("location")

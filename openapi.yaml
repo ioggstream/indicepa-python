@@ -93,7 +93,7 @@ paths:
 
   /amministrazioni:
     get:
-      operationId: api.get_amministrazioni
+      operationId: api.list_amministrazioni
       parameters:
         - in: query
           name: codice_ipa
@@ -283,7 +283,7 @@ paths:
 
   /uffici:
     get:
-      operationId: api.get_uffici
+      operationId: api.list_uffici
       parameters:
         - in: query
           name: codice_ipa

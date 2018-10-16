@@ -2,6 +2,7 @@ from ldap3 import ALL, Connection, Server
 import logging
 import yaml
 from pathlib import Path
+
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger()
 
@@ -21,7 +22,8 @@ def connect3(host, user, password):
 
 
 def connect():
-    return connect3(**config['test'])
+    return connect3(**config["test"])
+
 
 import logging
 
@@ -32,11 +34,10 @@ from app import DataclassEncoder
 
 
 class BaseTestCase(TestCase):
-
     def create_app(self):
-        logging.getLogger('connexion.operation').setLevel('ERROR')
-        app = connexion.App(__name__, specification_dir='..')
+        logging.getLogger("connexion.operation").setLevel("ERROR")
+        app = connexion.App(__name__, specification_dir="..")
         app.app.json_encoder = DataclassEncoder
         app.app.config.update(config)
-        app.add_api('openapi.yaml')
+        app.add_api("openapi.yaml")
         return app.app

@@ -14,14 +14,18 @@ class TestCase:
 
 
 def test_filter():
-    t = [
-        ("codice_ipa=055"), ()  # input, output
-    ]
+    t = [("codice_ipa=055"), ()]  # input, output
 
 
 def test_simple():
     t = TestCase(
-        q_filter="codice_ipa,codice_fiscale", ldap_attributes={"o", "codiceFiscaleAmm", "objectClass", "description"}
+        q_filter="codice_ipa,codice_fiscale",
+        ldap_attributes={
+            "o",
+            "codiceFiscaleAmm",
+            "objectClass",
+            "description",
+        },
     )
     assert_set_equal(set(parse_fields(t.q_filter)), t.ldap_attributes)
 
@@ -29,7 +33,8 @@ def test_simple():
 def test_complex():
     t = TestCase(
         q_filter="codice_ipa,codice_fiscale,location",
-        ldap_attributes={"o", "codiceFiscaleAmm", "objectClass", "description"} | set(Location.q_fields().values()),
+        ldap_attributes={"o", "codiceFiscaleAmm", "objectClass", "description"}
+        | set(Location.q_fields().values()),
     )
     assert_set_equal(set(parse_fields(t.q_filter)), t.ldap_attributes)
 
