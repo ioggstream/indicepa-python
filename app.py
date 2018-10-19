@@ -3,6 +3,7 @@ import json
 from logging import basicConfig
 from logging.config import dictConfig
 from os.path import isfile
+from urllib.parse import urlparse
 
 import connexion
 import yaml
@@ -67,5 +68,19 @@ if __name__ == "__main__":
         zapp.app.config.update(yaml.load(fh))
 
     zapp.app.json_encoder = DataclassEncoder
-    zapp.add_api("openapi.yaml", arguments={"title": "Hello World Example"})
+    fapi = zapp.add_api(
+        "openapi.yaml", arguments={"title": "Unofficial iPA convergent API"}
+    )
+
+    # Override openapi.yaml servers[0] netloc
+    #  to expose WebUI on a public address.
+    public_server = zapp.app.config.get("public_server")
+    if public_server:
+        server_one = fapi.__dict__["raw_spec"]["servers"][0]
+        server_one["url"] = (
+            urlparse(server_one["url"])
+            ._replace(netloc=args.external_server)
+            .geturl()
+        )
+
     zapp.run(host="0.0.0.0", debug=True, ssl_context="adhoc")
